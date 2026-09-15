@@ -1,0 +1,485 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Biogeografía",
+    "section": "",
+    "text": "Horario\nMartes: 11 a 14 horas\nMiércoles: 08 a 10 horas\nUbicación\nEdificio H\nProfesor\nJulio Pastor Guzman\n\n\n\n\n\n\n\nEsta asignatura\n\n\n\nEsta asignatura aporta al perfil profesional un marco conceptual y metodológico para proponer y desarrollar estudios integrales sobre la distribución de los organismos, como base para la planeación del manejo y conservación de la biodiversidad, así como para el aprovechamiento sustentable de los recursos bióticos.\n\n\n\n\n\n\n\n\nBienvenidos!\n\nAprenderás la teoría detrás de los patrones de distribución, incluyendo las variables ambientales, la evolución geológica de la Tierra, y los conceptos de dispersión y especiación que influyen en la diversidad biológica global.\nEn esta página encontrarás el temario, diapositivas, trabajos y evaluaciones del curso.\n\n\n\nCompetencia a desarrollar\nAl final de esta asignatura, el o la estudiante será capaz de:\n\nInterpretar y aplicar los patrones de distribución geográfica de plantas y animales en función de los factores bióticos, abióticos y de las actividades antropogénicas, para contribuir en la toma de decisiones del manejo y conservación de la biodiversidad.\n\n\n\nPre-requisitos\n\nIntegra técnicas de investigación documental y sistemática vegetal para evaluar la diversidad y organización de algas, briofitas, pteridofitas, y plantas superiores, aplicando conocimientos taxonómicos y ecológicos para la conservación de flora y fauna, y desarrollando protocolos de investigación que ofrezcan soluciones científico-tecnológicas a problemas profesionales.\n\n\n\nTemas\nLa asignatura se encuentra dividida en cinco grandes temas:  \n\n\n\n\n\nUnidad\nDescripción\n\n\n\n\n1\nIntroducción a la Biogeografía\n\n\n2\nÁreas de distribución\n\n\n3\nFactores que determinan las áreas de distribución de los organismos\n\n\n4\nRegiones biogeográficas\n\n\n5\nEscuelas biogeográficas y métodos de estudio\n\n\n\n\n\nLecturas recomendadas\nDa clic aquí para ir a las lecturas"
+  },
+  {
+    "objectID": "part_2_eda.html",
+    "href": "part_2_eda.html",
+    "title": "Part I",
+    "section": "",
+    "text": "Page with R code\n\n\n\nThis page contains an example template for a lab session, where R code and results are displayed here.\nYou can find more information on how to include code in Quarto website here.\nYou can experiment with code-fold and code-tools in the yaml header above to change how the code cells look like.",
+    "crumbs": [
+      "Home",
+      "Part I"
+    ]
+  },
+  {
+    "objectID": "part_2_eda.html#a-cancer-modeling-example",
+    "href": "part_2_eda.html#a-cancer-modeling-example",
+    "title": "Part I",
+    "section": "A Cancer Modeling Example",
+    "text": "A Cancer Modeling Example\nExercise on analysis of miRNA, mRNA and protein data from the paper Aure et al, Integrated analysis reveals microRNA networks coordinately expressed with key proteins in breast cancer, Genome Medicine, 2015.\nPlease run the code provided to replicate some of the analyses. Make sure you can explain what all the analysis steps do and that you understand all the results.\nIn addition, there are some extra tasks (Task 1), where no R code is provided. Please do these tasks when you have time available at the end of the lab.\n\nLoad the data\nRead the data, and convert to matrix format.\n\nmrna &lt;- read.table(\"data/data_example.txt\", header=T, sep=\"\\t\", dec=\".\")\n\n# Convert to matrix format\n\nmrna &lt;- as.matrix(mrna)\n\nPrint the data\n\nmrna[1:4, 1:4]\n\n      OSL2R.3002T4 OSL2R.3005T1 OSL2R.3013T1 OSL2R.3030T2\nACACA      1.60034     -0.49087     -0.26553     -0.27857\nANXA1     -2.42501     -0.05416     -0.46478     -2.18393\nAR         0.39615     -0.43348     -0.10232      0.58299\nBAK1       0.78627      0.39897      0.22598     -1.31202\n\n\nVisualise the overall distribution of expression levels by histogram\n\nhist(mrna, nclass=40, xlim=c(-5,5), col=\"lightblue\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTask 1\n\n\n\nThis is a callout-note, and it can be quite useful for exercises. You can find more about callout here.\nExample: Extend the above analysis to cover all genes.",
+    "crumbs": [
+      "Home",
+      "Part I"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About page\n\n\n\nThis page contains some elaborated background information about your workshop, or the instructors.\n\n\nFor example: A central problem in machine learning is how to make an algorithm perform well not just on the training data, but also on new inputs. Many strategies in machine learning are explicitly designed to reduce this test error, possibly at the expense of increased training error. These strategies are collectively known as regularisation and they are instrumental for good performance of any kind of prediction or classification model, especially in the context of small data (many features, few samples).\nIn the hands-on tutorial we will use R to perform an integrated analysis of multi-omics data with penalised regression.\n\nContact\nInstructor A: contact\nInstructor B: contact\nInstructor C: contact"
+  },
+  {
+    "objectID": "part_1_prep.html",
+    "href": "part_1_prep.html",
+    "title": "Preparation",
+    "section": "",
+    "text": "Page without code\n\n\n\nThis page contains an example for some structured preparation information for a workshop. No code is executed here.\nHere are some preparation information for the participants.",
+    "crumbs": [
+      "Home",
+      "Preparation"
+    ]
+  },
+  {
+    "objectID": "part_1_prep.html#software",
+    "href": "part_1_prep.html#software",
+    "title": "Preparation",
+    "section": "Software",
+    "text": "Software\nIn this workshop we will be using R. You can either\n\nhave R and Rstudio installed on your laptop\nor, use Posit cloud (formerly Rstudio Cloud).\n\nPosit cloud is free of charge for personal users, yet you need to sign up for a new user account and have internet connection.\nThe R package we are using is glmnet.",
+    "crumbs": [
+      "Home",
+      "Preparation"
+    ]
+  },
+  {
+    "objectID": "part_1_prep.html#data",
+    "href": "part_1_prep.html#data",
+    "title": "Preparation",
+    "section": "Data",
+    "text": "Data\nThe datasets we use can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Preparation"
+    ]
+  },
+  {
+    "objectID": "part_1_prep.html#code",
+    "href": "part_1_prep.html#code",
+    "title": "Preparation",
+    "section": "Code",
+    "text": "Code\nThe R scripts used in part 1 and part 2 can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Preparation"
+    ]
+  },
+  {
+    "objectID": "part_1_prep.html#resources",
+    "href": "part_1_prep.html#resources",
+    "title": "Preparation",
+    "section": "Resources",
+    "text": "Resources\nLecture notes (insert link)\nLab notes (insert link)",
+    "crumbs": [
+      "Home",
+      "Preparation"
+    ]
+  },
+  {
+    "objectID": "U1.html",
+    "href": "U1.html",
+    "title": "Unidad 1: Introducción a la Biogeografía",
+    "section": "",
+    "text": "Note\n\n\n\n\nAplica los conocimientos de ciencias afines a la biogeografía, para entender la importancia, campos y enfoques del estudio de la biogeografía.\n\n\n\n\n\n\n\nDiapositivas\n\n\n\n\n\nTemario\n\n\n\n\n\nEvaluación\n\n\n\n\n\nTrabajos",
+    "crumbs": [
+      "Inicio",
+      "Unidad 1: Introducción a la Biogeografía"
+    ]
+  },
+  {
+    "objectID": "U1.html#software",
+    "href": "U1.html#software",
+    "title": "Unidad 1",
+    "section": "Software",
+    "text": "Software\nIn this workshop we will be using R. You can either\n\nhave R and Rstudio installed on your laptop\nor, use Posit cloud (formerly Rstudio Cloud).\n\nPosit cloud is free of charge for personal users, yet you need to sign up for a new user account and have internet connection.\nThe R package we are using is glmnet.",
+    "crumbs": [
+      "Home",
+      "Unidad 1"
+    ]
+  },
+  {
+    "objectID": "U1.html#data",
+    "href": "U1.html#data",
+    "title": "Unidad 1",
+    "section": "Data",
+    "text": "Data\nThe datasets we use can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 1"
+    ]
+  },
+  {
+    "objectID": "U1.html#code",
+    "href": "U1.html#code",
+    "title": "Unidad 1",
+    "section": "Code",
+    "text": "Code\nThe R scripts used in part 1 and part 2 can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 1"
+    ]
+  },
+  {
+    "objectID": "U1.html#resources",
+    "href": "U1.html#resources",
+    "title": "Unidad 1",
+    "section": "Resources",
+    "text": "Resources\nLecture notes (insert link)\nLab notes (insert link)",
+    "crumbs": [
+      "Home",
+      "Unidad 1"
+    ]
+  },
+  {
+    "objectID": "U2.html",
+    "href": "U2.html",
+    "title": "Unidad 2: Áreas de distribución",
+    "section": "",
+    "text": "Note\n\n\n\n\nAplica métodos de delimitación de áreas biogeográficas, para identificar áreas de megadiversidad endemismo, centros de origen y centros diversidad.\n\n\n\n\n\n\n\nDiapositivas\n\n\n\n\n\nTemario\n\n\n\n\n\nEvaluación\n\n\n\n\n\nTrabajos",
+    "crumbs": [
+      "Inicio",
+      "Unidad 2: Áreas de distribución"
+    ]
+  },
+  {
+    "objectID": "U2.html#a-cancer-modeling-example",
+    "href": "U2.html#a-cancer-modeling-example",
+    "title": "Unidad 2",
+    "section": "A Cancer Modeling Example",
+    "text": "A Cancer Modeling Example\nExercise on analysis of miRNA, mRNA and protein data from the paper Aure et al, Integrated analysis reveals microRNA networks coordinately expressed with key proteins in breast cancer, Genome Medicine, 2015.\nPlease run the code provided to replicate some of the analyses. Make sure you can explain what all the analysis steps do and that you understand all the results.\nIn addition, there are some extra tasks (Task 1), where no R code is provided. Please do these tasks when you have time available at the end of the lab.\n\nLoad the data\nRead the data, and convert to matrix format.\n\nmrna &lt;- read.table(\"data/data_example.txt\", header=T, sep=\"\\t\", dec=\".\")\n\n# Convert to matrix format\n\nmrna &lt;- as.matrix(mrna)\n\nPrint the data\n\nmrna[1:4, 1:4]\n\n      OSL2R.3002T4 OSL2R.3005T1 OSL2R.3013T1 OSL2R.3030T2\nACACA      1.60034     -0.49087     -0.26553     -0.27857\nANXA1     -2.42501     -0.05416     -0.46478     -2.18393\nAR         0.39615     -0.43348     -0.10232      0.58299\nBAK1       0.78627      0.39897      0.22598     -1.31202\n\n\nVisualise the overall distribution of expression levels by histogram\n\nhist(mrna, nclass=40, xlim=c(-5,5), col=\"lightblue\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTask 1\n\n\n\nThis is a callout-note, and it can be quite useful for exercises. You can find more about callout here.\nExample: Extend the above analysis to cover all genes.",
+    "crumbs": [
+      "Home",
+      "Unidad 2"
+    ]
+  },
+  {
+    "objectID": "U3.html",
+    "href": "U3.html",
+    "title": "Unidad 3: Factores que determinan las áreas de distribución de los organismos",
+    "section": "",
+    "text": "Note\n\n\n\n\nAnaliza los factores abióticos y bióticos que determinan la distribución de los organismos para explicar la distribución pasada y actual de los organismos en el planeta.\n\n\n\n\n\n\n\nDiapositivas\n\n\n\n\n\nTemario\n\n\n\n\n\nEvaluación\n\n\n\n[\n\nTrabajos",
+    "crumbs": [
+      "Inicio",
+      "Unidad 3: Factores que determinan las áreas de distribución de los organismos"
+    ]
+  },
+  {
+    "objectID": "U3.html#software",
+    "href": "U3.html#software",
+    "title": "Unidad 3",
+    "section": "Software",
+    "text": "Software\n\nIn this workshop we will be using R. You can either\n\nhave R and Rstudio installed on your laptop\nor, use Posit cloud (formerly Rstudio Cloud).\n\nPosit cloud is free of charge for personal users, yet you need to sign up for a new user account and have internet connection.\nThe R package we are using is glmnet.",
+    "crumbs": [
+      "Home",
+      "Unidad 3"
+    ]
+  },
+  {
+    "objectID": "U3.html#data",
+    "href": "U3.html#data",
+    "title": "Unidad 3",
+    "section": "Data",
+    "text": "Data\n\nThe datasets we use can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 3"
+    ]
+  },
+  {
+    "objectID": "U3.html#code",
+    "href": "U3.html#code",
+    "title": "Unidad 3",
+    "section": "Code",
+    "text": "Code\n\nThe R scripts used in part 1 and part 2 can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 3"
+    ]
+  },
+  {
+    "objectID": "U3.html#resources",
+    "href": "U3.html#resources",
+    "title": "Unidad 3",
+    "section": "Resources",
+    "text": "Resources\n\nLecture notes (insert link)\nLab notes (insert link)",
+    "crumbs": [
+      "Home",
+      "Unidad 3"
+    ]
+  },
+  {
+    "objectID": "U3.html#title-unidad-1",
+    "href": "U3.html#title-unidad-1",
+    "title": "Unidad 1",
+    "section": "title: “Unidad 1”\\",
+    "text": "title: “Unidad 1”\\\nformat:\nhtml:\ncode-fold: false\ncode-tools: false\neditor: visual\n\n\n\n\n\n\nPage without code\n\n\n\nThis page contains an example for some structured preparation information for a workshop. No code is executed here.\n\n\n\nHere are some preparation information for the participants.",
+    "crumbs": [
+      "Home",
+      "Unidad 3"
+    ]
+  },
+  {
+    "objectID": "U3.html#software-1",
+    "href": "U3.html#software-1",
+    "title": "Unidad 1",
+    "section": "Software",
+    "text": "Software\n\n{fig-alt=“Software icon” width=“80px”}\nIn this workshop we will be using R. You can either\n\nhave R and Rstudio installed on your laptop\nor, use Posit cloud (formerly Rstudio Cloud).\n\nPosit cloud is free of charge for personal users, yet you need to sign up for a new user account and have internet connection.\nThe R package we are using is glmnet.",
+    "crumbs": [
+      "Home",
+      "Unidad 3"
+    ]
+  },
+  {
+    "objectID": "U3.html#data-1",
+    "href": "U3.html#data-1",
+    "title": "Unidad 1",
+    "section": "Data",
+    "text": "Data\n\n{fig-alt=“Data icon” width=“80px”}\nThe datasets we use can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 3"
+    ]
+  },
+  {
+    "objectID": "U3.html#code-1",
+    "href": "U3.html#code-1",
+    "title": "Unidad 1",
+    "section": "Code",
+    "text": "Code\n\n{fig-alt=“Code icon” width=“80px”}\nThe R scripts used in part 1 and part 2 can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 3"
+    ]
+  },
+  {
+    "objectID": "U3.html#resources-1",
+    "href": "U3.html#resources-1",
+    "title": "Unidad 1",
+    "section": "Resources",
+    "text": "Resources\n\n{fig-alt=“Resources icon” width=“80px”}\nLecture notes (insert link)\nLab notes (insert link)",
+    "crumbs": [
+      "Home",
+      "Unidad 3"
+    ]
+  },
+  {
+    "objectID": "U4.html",
+    "href": "U4.html",
+    "title": "Unidad 4: Regiones biogeográficas",
+    "section": "",
+    "text": "Note\n\n\n\n\nIdentifica y aplica modelos de similitud para reconocer las regiones biogeográficas del mundo y de México.\n\n\n\n\n\n\n\nDiapositivas\n\n\n\n\n\nTemario\n\n\n\n\n\nEvaluación\n\n\n\n[\n\nTrabajos",
+    "crumbs": [
+      "Inicio",
+      "Unidad 4: Regiones biogeográficas"
+    ]
+  },
+  {
+    "objectID": "U4.html#software",
+    "href": "U4.html#software",
+    "title": "Unidad 4",
+    "section": "Software",
+    "text": "Software\n\nIn this workshop we will be using R. You can either\n\nhave R and Rstudio installed on your laptop\nor, use Posit cloud (formerly Rstudio Cloud).\n\nPosit cloud is free of charge for personal users, yet you need to sign up for a new user account and have internet connection.\nThe R package we are using is glmnet.",
+    "crumbs": [
+      "Home",
+      "Unidad 4"
+    ]
+  },
+  {
+    "objectID": "U4.html#data",
+    "href": "U4.html#data",
+    "title": "Unidad 4",
+    "section": "Data",
+    "text": "Data\n\nThe datasets we use can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 4"
+    ]
+  },
+  {
+    "objectID": "U4.html#code",
+    "href": "U4.html#code",
+    "title": "Unidad 4",
+    "section": "Code",
+    "text": "Code\n\nThe R scripts used in part 1 and part 2 can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 4"
+    ]
+  },
+  {
+    "objectID": "U4.html#resources",
+    "href": "U4.html#resources",
+    "title": "Unidad 4",
+    "section": "Resources",
+    "text": "Resources\n\nLecture notes (insert link)\nLab notes (insert link)",
+    "crumbs": [
+      "Home",
+      "Unidad 4"
+    ]
+  },
+  {
+    "objectID": "U4.html#software-1",
+    "href": "U4.html#software-1",
+    "title": "Unidad 4",
+    "section": "Software",
+    "text": "Software\n\nIn this workshop we will be using R. You can either\n\nhave R and Rstudio installed on your laptop\nor, use Posit cloud (formerly Rstudio Cloud).\n\nPosit cloud is free of charge for personal users, yet you need to sign up for a new user account and have internet connection.\nThe R package we are using is glmnet.",
+    "crumbs": [
+      "Home",
+      "Unidad 4"
+    ]
+  },
+  {
+    "objectID": "U4.html#data-1",
+    "href": "U4.html#data-1",
+    "title": "Unidad 4",
+    "section": "Data",
+    "text": "Data\n\nThe datasets we use can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 4"
+    ]
+  },
+  {
+    "objectID": "U4.html#code-1",
+    "href": "U4.html#code-1",
+    "title": "Unidad 4",
+    "section": "Code",
+    "text": "Code\n\nThe R scripts used in part 1 and part 2 can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 4"
+    ]
+  },
+  {
+    "objectID": "U4.html#resources-1",
+    "href": "U4.html#resources-1",
+    "title": "Unidad 4",
+    "section": "Resources",
+    "text": "Resources\n\nLecture notes (insert link)\nLab notes (insert link)",
+    "crumbs": [
+      "Home",
+      "Unidad 4"
+    ]
+  },
+  {
+    "objectID": "index.html#bienvenidos",
+    "href": "index.html#bienvenidos",
+    "title": "Meteorología y Climatología",
+    "section": "Bienvenidos!",
+    "text": "Bienvenidos!\n\nThe goal of the workshop is to … (insert your message)\nFor example, introduce kep concepts in machine learning, such as regularisation.\nWorkshop material can be found in the workshop github repository."
+  },
+  {
+    "objectID": "index.html#competencia-a-desarrollar",
+    "href": "index.html#competencia-a-desarrollar",
+    "title": "Meteorología y Climatología",
+    "section": "Competencia a desarrollar",
+    "text": "Competencia a desarrollar\nAl final de esta asignatura, el o la estudiante será capaz de:\n\nAplicar los conocimientos de la Meteorología y sus elementos para garantizar la seguridad propia y del turista."
+  },
+  {
+    "objectID": "index.html#pre-requisitos",
+    "href": "index.html#pre-requisitos",
+    "title": "Meteorología y Climatología",
+    "section": "Pre-requisitos",
+    "text": "Pre-requisitos\n\nManejo con propiedad Información geográfica.\nAplica métodos de representación cartográfica."
+  },
+  {
+    "objectID": "index.html#temas",
+    "href": "index.html#temas",
+    "title": "Meteorología y Climatología",
+    "section": "Temas",
+    "text": "Temas\nLa asignatura se encuentra dividida en cuatro temas. Los tres primeros enfocados a meteorología y el cuarto a la climatología.  \n\n\n\n\n\nUnidad\nDescripción\n\n\n\n\n1\nIntroducción a la Meteorología\n\n\n2\nFenómenos atmosféricos de riesgos para las actividades turísticas\n\n\n2\nCirculación general de los vientos atmosféricos\n\n\n2\nClimatología"
+  },
+  {
+    "objectID": "U1-tem.html",
+    "href": "U1-tem.html",
+    "title": "Unidad 1: Introducción a la Biogeografía",
+    "section": "",
+    "text": "Esta asignatura\n\n\n\nAplica los conocimientos de ciencias afines a la biogeografía, para entender la importancia, campos y enfoques del estudio de la biogeografía.\n\n\n1.1 Definición, campo de acción de la biogeografía y enfoques.\n1.2 Biogeografía y ciencias afines.\n1.3 Historia de la biogeografía\n1.4 Sistemas de información geográfica, para estudios biogeográficos."
+  },
+  {
+    "objectID": "U1-tra.html",
+    "href": "U1-tra.html",
+    "title": "Unidad 1: Introducción a la Biogeografía",
+    "section": "",
+    "text": "Actividades de la unidad 1\n\n\n\n\n\nActividad\n\n\nDescripción\n\n\nEntrega\n\n\nCargue aquí\n\n\n\n\nDefiniciones\n\n\nConsulta 5 definiciones de Biogeografía y 5 de Sistemas de Información Geográfica, identifica los elementos clave y escribe tu propia definición.\n\n\n04-sep-2026\n\n\n Subir \n\n\n\n\nLínea de tiempo\n\n\nRealiza una investigación documental y elabora un diagrama cronológico que muestre las aportaciones principales de cada exponente del pensamiento biogeográfico.\n\n\n04-sep-2026\n\n\n Subir \n\n\n\n\nPráctica 1 - Introducción al software SIG para Biogeografía\n\n\nReconocer la interfaz de QGIS e identificar sus principales funciones para visualizar datos geográficos.\n\n\n04-sep-2026\n\n\n Subir"
+  },
+  {
+    "objectID": "U1-eva.html",
+    "href": "U1-eva.html",
+    "title": "Unidad 1: Tipos de investigación",
+    "section": "",
+    "text": "Note\n\n\n\n\nDistingue los tipos de investigación, así como los métodos y técnicas de cada uno de ellos.\n\n\n\n\n\n\n\nDiapositivas\n\n\n\n\n\nTemario\n\n\n\n\n\nEvaluación\n\n\n\n\n\nTrabajos"
+  },
+  {
+    "objectID": "U5.html",
+    "href": "U5.html",
+    "title": "Unidad 5: Escuelas biogeográficas y métodos de estudio",
+    "section": "",
+    "text": "Note\n\n\n\n\n\n\n\n\nContrasta los paradigmas de las escuelas de pensamiento y sus métodos de estudio, para seleccionar los elementos que faciliten los procesos de toma de decisiones respecto a las áreas\ncríticas para la conservación. \n\n\nDiapositivas\n\n\n\n\n\nTemario\n\n\n\n\n\nEvaluación\n\n\n\n[\n\nTrabajos",
+    "crumbs": [
+      "Inicio",
+      "Unidad 5: Escuelas biogeográficas y métodos de estudio"
+    ]
+  },
+  {
+    "objectID": "U2-tem.html",
+    "href": "U2-tem.html",
+    "title": "Unidad 2: Áreas de distribución",
+    "section": "",
+    "text": "Esta asignatura\n\n\n\nAplica métodos de delimitación de áreas biogeográficas, para identificar áreas de megadiversidad endemismo, centros de origen y centros diversidad.\n\n\n2.1 Definición y métodos de delimitación de áreas biogeográficas.\n2.2 Dispersión y migración.\n2.3 Barreras y puentes biogeográficos.\n2.4 Patrones de distribución.\n2.5 Patrones de endemismo.\n2.6 Patrones de megadiversidad y países megadiversos.\n2.7 Centros de origen y centros de diversidad.\n2.8 Biogeografía de islas y hábitats fragmentados."
+  },
+  {
+    "objectID": "lit.html",
+    "href": "lit.html",
+    "title": "Lecturas recomendadas",
+    "section": "",
+    "text": "Note\n\n\n\n\nEn esta página encontrarás una lista de lecturas recomendadas para la asignatura de Biogeografía. Los documentos han sido cuidadosamente seleccionados para proporcionar una comprensión amplia y detallada de los diversos aspectos de esta disciplina. Los textos incluyen desde enfoques comparativos hasta aproximaciones ecológicas y evolutivas:\n\n\n\nLecturas\n\nBiogeographical regionalisation of the Neotropical region  [link] \nNature’s Biodiversity The Search, for Beginnings and for Order  [link] \nIsland biogeography of native and alien plant species: Contrasting drivers of diversity across the Lesser Antilles  [link] \nThe map of Biodiversity From Local to Global Scales  [link] \nGlobal Centers of Vascular Plant Diversity  [link] \nComparative Biogeography  [link] \nBiogeography - Second Edition  [link] \nBiogeography - Space, Time and Life  [link] \nFundamentals of Biogeography - Second Edition  [link] \nBiogeography - An Ecologica and Evolutionary Approach  [link] \nBiogeography - A Brief Introduction  [link] \nBiogeography - Berkshire  [link] \nBiogeografía - La Dimensión Espacial de la Evolución  [link] \nIntroducción a la Biogeografía en Latinoamérica: Teorías, Conceptos, Métodos y Aplicaciones  [link] \nSistemática, Biogeografía y Evolución - Los Patrones de la Biodiversidad en Tiempo-Espacio  [link] \nHistorical Biogeography: A Review of its Basic Concepts and Critical Issues  [link] \nBiogeography in the Early Twenty-First Century: A Science with Increasing Significance for Earth´s Changes and Challenges  [link]",
+    "crumbs": [
+      "Inicio",
+      "Lecturas recomendadas"
+    ]
+  },
+  {
+    "objectID": "U2-tra.html",
+    "href": "U2-tra.html",
+    "title": "Unidad 2: Áreas de distribución",
+    "section": "",
+    "text": "Actividades de la unidad 1\n\n\n\n\n\nActividad\n\n\nDescripción\n\n\nEntrega\n\n\nCargue aquí\n\n\n\n\nDelimitación convexa y buffer\n\n\nRealizar delimitación del área de distribución de dos especies de roedor empleando el método del polígono convexo y la fusión de áreas de influencia al rededor de las ocurrencias georreferenciadas.\n\n\n15-sep-2026\n\n\n Subir \n\n\n\n\nProcesos de dispersión\n\n\nDibujar, explicar y dar ejemplo de los procesos de extensión de rango, geodispersión, dispersión por salto y vicarianza. Debe usar ejemplos de algún taxón con referencias confiables.\n\n\n16-sep-2026\n\n\n Subir"
+  },
+  {
+    "objectID": "U4-tem.html",
+    "href": "U4-tem.html",
+    "title": "Unidad 4: Regiones biogeográficas",
+    "section": "",
+    "text": "Esta asignatura\n\n\n\nIdentifica y aplica modelos de similitud para reconocer las regiones biogeográficas del mundo y de México.\n\n\n4.1. Reinos biogeográficos\n4.2. Provincias bióticas\n4.3. Distritos florísticos y faunísticos\n4.4. Similitud entre áreas\n4.5. Regionalización biogeográfica de México\n4.6. Medio marino"
+  },
+  {
+    "objectID": "U3-tem.html",
+    "href": "U3-tem.html",
+    "title": "Unidad 3: Factores que determinan las áreas de distribución de los organismos",
+    "section": "",
+    "text": "Esta asignatura\n\n\n\nAnaliza los factores abióticos y bióticos que determinan la distribución de los organismos para explicar la distribución pasada y actual de los organismos en el planeta.\n\n\n3.1 Tectónica de placas\n3.2 Glaciaciones y refugios pleistocénicos.\n3.3 Altitud-latitud y factores climáticos.\n3.4 Potencial biótico, plasticidad genética y tolerancia ecológica.\n3.5 Estudios de casos en flora y/o fauna de México."
+  },
+  {
+    "objectID": "U5-tem.html",
+    "href": "U5-tem.html",
+    "title": "Unidad 5: Escuelas biogeográficas y métodos de estudio",
+    "section": "",
+    "text": "Esta asignatura\n\n\n\nContrasta los paradigmas de las escuelas de pensamiento y sus métodos de estudio, para seleccionar los elementos que faciliten los procesos de toma de decisiones respecto a las áreas críticas para la conservación.\n\n\n5.1. Escuela dispersionista: Definición y técnicas de estudio.\n5.2. Escuela Panbiogeografía: Definición y técnicas de estudio.\n5.3. Escuela cladística: Definición y técnicas de estudio."
+  }
+]
